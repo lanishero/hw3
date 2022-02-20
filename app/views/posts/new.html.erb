@@ -1,4 +1,4 @@
-<h1>Add new place</h1>
+<h1>Add new post</h1>
 
 
 <%= form_with model: @post do |form| %>
@@ -10,7 +10,7 @@
     <%= form.label "description" %>
     <%= form.text_field "description" %>
     <%= form.label "posted_on" %>
-    <%= form.text_field "posted_on" %>
+    <%= form.date_field "posted_on" %>
   </p>
   <%= form.submit %>
 <% end %>

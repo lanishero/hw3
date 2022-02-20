@@ -3,21 +3,11 @@
 
 <%= form_with model: @place do |form| %>
     <p>
-    <%= form.label "title", "Title" %>
-    <%= form.text_field "title" %>
-    </p>
-
-    <p>
-    <%= form.label "description" %>
-    <%= form.text_field "description" %>
-    </p>
-
-    <p>
-    <%= form.label "posted_on" %>
-    <%= form.text_field "posted_on" %>
+    <%= form.label "name", "Name" %>
+    <%= form.text_field "name" %>
     </p>
 
   <%= form.submit %>
-  
+
 <% end %>
 
